@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { registerUser } from '../services/api';
 import { useNavigate } from 'react-router-dom';
-// import '../styles/RegisterPage.css';
-
 
 export default function RegisterPage() {
   const [form, setForm] = useState({ username: '', email: '', mobile: '', password: '', dob: '' });
@@ -45,51 +43,3 @@ export default function RegisterPage() {
   );
 }
 
-
-// import React, { useState } from 'react';
-// import { registerUser } from '../services/api';
-// import { useNavigate, Link } from 'react-router-dom';
-// import '../styles/RegisterPage.css';
-
-// export default function RegisterPage() {
-//   const [form, setForm] = useState({
-//     username: '',
-//     email: '',
-//     mobile: '',
-//     password: '',
-//     dob: '',
-//   });
-//   const [msg, setMsg] = useState('');
-//   const nav = useNavigate();
-
-//   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
-
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     try {
-//       const data = await registerUser(form);
-//       setMsg(data.message || 'Registered successfully!');
-//       if (data.success) nav('/login');
-//     } catch (err) {
-//       setMsg(err.response?.data?.message || 'Registration failed');
-//     }
-//   };
-
-//   return (
-//     <div className="register-container">
-//       <h2>Register</h2>
-//       <form onSubmit={handleSubmit} className="register-form">
-//         <input name="username" placeholder="Username" value={form.username} onChange={handleChange} required />
-//         <input name="email" placeholder="Email" value={form.email} onChange={handleChange} required />
-//         <input name="mobile" placeholder="Mobile" value={form.mobile} onChange={handleChange} required />
-//         <input name="password" type="password" placeholder="Password" value={form.password} onChange={handleChange} required />
-//         <input name="dob" type="date" value={form.dob} onChange={handleChange} required />
-//         <button type="submit">Register</button>
-//       </form>
-//       <p className="redirect">
-//         Already registered? <Link to="/login">Login</Link>
-//       </p>
-//       {msg && <div className="register-msg">{msg}</div>}
-//     </div>
-//   );
-// }
