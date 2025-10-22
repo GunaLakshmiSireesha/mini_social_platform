@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import CreatePost from './CreatePost';
 import Feed from './Feed';
-// import '../styles/Dashboard.css';
 
 export default function Dashboard({ user }) {
   const [showCreate, setShowCreate] = useState(true);
@@ -25,17 +24,4 @@ export default function Dashboard({ user }) {
   );
 }
 
-
-// import React from 'react';
-// import '../styles/Dashboard.css';
-
-// export default function Dashboard() {
-//   const user = JSON.parse(localStorage.getItem('user')) || { username: 'User' };
-//   return (
-//     <div className="dashboard-container">
-//       <h2>Welcome, {user.username}!</h2>
-//       <p>Enjoy connecting and sharing posts with your friends 🚀</p>
-//     </div>
-//   );
-// }
 
