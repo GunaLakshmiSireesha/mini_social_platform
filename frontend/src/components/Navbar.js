@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import LoginForm from './LoginForm';
-// import '../styles/Navbar.css';
-
 
 export default function Navbar({ user, onLogout, onLoginSuccess }) {
   const [showLogin, setShowLogin] = useState(false);
@@ -36,7 +34,6 @@ export default function Navbar({ user, onLogout, onLoginSuccess }) {
         )}
       </div>
 
-      {/* Inline small dropdown login form */}
       {showLogin && !user && (
         <div style={{
           position: 'absolute', right: 16, top: 56, background: 'white', border: '1px solid #ccc', padding: 12, zIndex: 40
@@ -49,48 +46,6 @@ export default function Navbar({ user, onLogout, onLoginSuccess }) {
 }
 
 
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import '../styles/Navbar.css';
-
-// export default function Navbar() {
-//   return (
-//     <nav className="navbar">
-//       <h1 className="navbar-logo">Social Media</h1>
-//       <div className="navbar-links">
-//         <Link to="/feed">Feed</Link>
-//         <Link to="/login">Login</Link>
-//         <Link to="/register">Register</Link>
-//       </div>
-//     </nav>
-//   );
-// }
-
-
-
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import '../styles/Navbar.css';
-
-// export default function Navbar({ token, onLogout }) {
-//   return (
-//     <nav className="navbar">
-//       <h2 className="logo">Social Media</h2>
-//       <div className="nav-links">
-//         {token ? (
-//           <>
-//             <Link to="/feed">Feed</Link>
-//             <Link to="/create">Create Post</Link>
-//             <button onClick={onLogout} className="logout-btn">Logout</button>
-//           </>
-//         ) : (
-//           <>
-//             <Link to="/feed">Feed</Link>
-//             <Link to="/login">Login</Link>
-//             <Link to="/register">Register</Link>
-//           </>
-//         )}
-//       </div>
 //     </nav>
 //   );
 // }
