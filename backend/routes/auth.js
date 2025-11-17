@@ -47,5 +47,14 @@ router.post('/login', async (req, res) => {
   }
 });
 
-module.exports = router;
 
+router.get('/lookup', async (req, res) => {
+  const email = req.query.email;
+  if (!email) return res.status(400).json({ message: 'email required' });
+  const user = await User.findOne({ email }).select('_id email username');
+  if (!user) return res.status(404).json({ message: 'User not found' });
+  return res.json({ userId: user._id, email: user.email, username: user.username });
+});
+
+
+module.exports = router;
