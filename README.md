@@ -1,4 +1,4 @@
-** FunnyHub – A Mini Social Media Platform **
+## FunnyHub – A Mini Social Media Platform ##
 
 A full-stack MERN (MongoDB, Express.js, React.js, Node.js) social media application where users can create posts, upload images, chat with other users, follow people, and manage their profiles.
 
