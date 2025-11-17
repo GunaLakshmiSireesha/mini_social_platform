@@ -1,0 +1,118 @@
+.create-inline-card{background:var(--card);padding:12px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06);margin-bottom:12px}
+.create-inline-top{display:flex;gap:8px;align-items:center}
+.create-inline-top input[type="text"]{flex:1;padding:10px;border-radius:8px;border:1px solid #ddd}
+.create-inline-actions{display:flex;gap:10px;margin-top:8px}
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  background: #8a8688;
+  min-height: 100vh;
+}
+
+.feed-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: cursive;
+  color: #670c2b;
+}
+
+.feed-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 400px
+}
+
+.post-card {
+  background: #f4f2f3;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Post header */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff7a18, #af4261);
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.post-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-author {
+  font-weight: 600;
+  color: #333;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Image */
+.post-image {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Caption */
+.post-caption {
+  padding: 14px 16px;
+  font-size: 15px;
+  color: #444;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* Actions */
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 14px;
+  border-top: 1px solid #eee;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 15px;
+}
+
+.post-actions button:hover {
+  color: #ff7a18;
+}

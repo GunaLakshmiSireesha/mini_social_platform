@@ -1,0 +1,11 @@
+:root{
+  --primary:#ff7a18;
+  --accent:#af4261;
+  --muted:#f4f7fb;
+  --card:#fff;
+  --text:#222;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial;background:var(--muted);color:var(--text)}
+.primary-btn{background:linear-gradient(90deg,var(--primary),#ff3d00);color:white;border:none;padding:10px 12px;border-radius:8px;cursor:pointer}
+
