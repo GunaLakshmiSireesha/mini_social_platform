@@ -5,7 +5,7 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) social media applicat
 This project is built to mimic essential features of platforms like Instagram, including a clean login UI, feed system, messages page, and profile management.
 
 # Features:
-  --> User Authentication
+    --> User Authentication
       - Login & Register using JWT
       - Secure password hashing
       - Protects private routes
